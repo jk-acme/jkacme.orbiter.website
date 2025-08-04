@@ -1,0 +1,5 @@
+{
+  "domain": "jkacme",
+  "buildCommand": "pnpm run build",
+  "buildDir": "dist"
+}
