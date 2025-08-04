@@ -1,0 +1,21 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Orbiter
+        uses: orbiterhost/orbiter-github-actions@v0.1.4
+        with:
+          project-name: "jkacme"
+          build-dir: "./dist"
+          api-key: ${{ secrets.ORBITER_API_KEY }}
+          node-version: "latest"
+          build-command: "pnpm run build && npx orbiter-cli update -d my-site public"
