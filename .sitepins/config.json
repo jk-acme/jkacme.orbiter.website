@@ -1,0 +1,14 @@
+{
+  "media": {
+    "root": "src/content",
+    "public": "src"
+  },
+  "content": {
+    "root": "src/content"
+  },
+  "themeConfig": [
+    "astro.config.mjs"
+  ],
+  "arrangement": [],
+  "showCommitModal": true
+}
