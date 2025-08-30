@@ -8,11 +8,7 @@
   },
   "themeConfig": [
     "astro.config.mjs",
-    ".sitepins/config.json",
-    ".astro/collections/blog.schema.json",
-    ".astro/content-assets.mjs",
-    ".astro/content-modules.mjs",
-    ".env"
+    ".sitepins/config.json"
   ],
   "arrangement": [],
   "showCommitModal": true
