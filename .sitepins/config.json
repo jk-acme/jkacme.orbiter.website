@@ -7,7 +7,12 @@
     "root": "src"
   },
   "themeConfig": [
-    "astro.config.mjs"
+    "astro.config.mjs",
+    ".sitepins/config.json",
+    ".astro/collections/blog.schema.json",
+    ".astro/content-assets.mjs",
+    ".astro/content-modules.mjs",
+    ".env"
   ],
   "arrangement": [],
   "showCommitModal": true
